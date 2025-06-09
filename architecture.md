@@ -3,9 +3,9 @@
 
 Key runtime assumptions are
 
-- Cloud
-- Kubernetes
-- Docker Containers
+- [Cloud](https://en.wikipedia.org/wiki/Cloud_computing)
+- [Kubernetes](https://kubernetes.io/)
+- [Docker](https://www.docker.com/) and Containers
 
 Those are key factors shaping up the research and suggested solutions.
 
@@ -27,8 +27,8 @@ Agents are installed using `cubectl` command and are thus "known" to the Kuberne
  | +------------------------------------------  |  ----------------+ |
  | |                k8s Pod                     |                  | |
  | |   +------------------------------------docker daemon-------+  | |
- | |   |                                        +               |  | |
- | |   |  Docker      +---------------------------+             |  | |
+ | |   |                                        |               |  | |
+ | |   |  Docker      +-------------------------+-+             |  | |
  | |   |              |  Read                     |  Read       |  | |
  | |   |              v                           v             |  | |
  | |   |  +---------Logs----------+   +---------Logs----------+ |  | |
