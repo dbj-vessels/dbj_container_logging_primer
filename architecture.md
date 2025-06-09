@@ -1,5 +1,5 @@
 
-# Logging infrastrucuture research
+# Logging infrastructure research
 
 Key runtime assumptions are
 
