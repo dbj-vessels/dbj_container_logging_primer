@@ -1,6 +1,6 @@
 [This video](https://youtu.be/CSb-sHNM2NY) is very wrongly named. Watch it first.
 
-# From Container to the Syslog
+# From Container to the [Syslog](https://en.wikipedia.org/wiki/Syslog)
 <!-- Compiler: dusan.jovanovic@fisglobal.com 
 [inspiration](https://www.cloudsavvyit.com/14114/how-to-connect-to-localhost-within-a-docker-container/)
 -->
@@ -11,7 +11,7 @@ There are basically two options when using syslog from a container.
 
 Various source files in here contain the other very usefull details.
 
-## 1. Pass syslog message over a network
+## 1. Pass syslog message over a network,  "arround" a container host
 
 "The Easy Option", is to target the default syslog server `localhost:514` on the host machine.
 
@@ -32,9 +32,10 @@ From a C/C++ code, the standard CRT `system()` function might be used in a simil
 system( "Hello container log ..." " > /dev/console");
 ```
 
-## Docker howto
+## Addendum
+### Docker howto
 
-### Howto push to the https://hub.docker.com
+#### Howto push to the https://hub.docker.com
 
 To be apsolutely certain advice works for you, first do the `docker logout` and then `docker login`.
 
